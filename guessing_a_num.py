@@ -1,10 +1,12 @@
 import random
 
 num = random.randint(1, 10)
+name= input("What is your Name? ")
+print(f"Okay {name}. I am guessing a number between 1 and 10.")
 guess = None
 
 while guess != num:
-    guess = int(input("guess a number between 1 and 10: "))
+    guess = int(input("Now you can start guessing a number: "))
 
     if (guess == num):
         print("Congratulations! you won!")
